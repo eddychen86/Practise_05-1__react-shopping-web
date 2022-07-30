@@ -1,7 +1,12 @@
 import React from 'react';
+import DefaultLayout from '../components/layout/DefaultLayout';
 
 const CheckoutPage = () => {
-  return (<div>CheckoutPage</div>)
+  return (
+    <DefaultLayout>
+      CheckoutPage
+    </DefaultLayout>
+  )
 }
 
 export default CheckoutPage;

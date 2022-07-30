@@ -1,7 +1,12 @@
 import React from 'react';
+import DefaultLayout from '../components/layout/DefaultLayout';
 
 const CartPage = () => {
-  return (<div>CartPage</div>)
+  return (
+    <DefaultLayout>
+      CartPage
+    </DefaultLayout>
+  )
 }
 
 export default CartPage;
