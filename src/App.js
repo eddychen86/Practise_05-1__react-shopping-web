@@ -5,6 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import React from 'react';
+import 'antd/dist/antd.min.css';
 
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';

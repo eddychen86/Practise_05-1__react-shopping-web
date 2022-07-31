@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 
 import Container from '../common/Container';
 
-const PageHeader = styled.div`
+const PageHeader = styled(Header)`
   ${(props) => props.fixed && css`
     position: fixed;
   `};
@@ -23,9 +23,7 @@ const DefaultLayout = ({ fixedHeader, children }) => {
       )} */}
 
       {/* PageHeader 的 fixed 為偵測是否有運用到 fixedHeader */}
-      <PageHeader fixed={fixedHeader}>
-        <Header />
-      </PageHeader>
+      <PageHeader fixed={fixedHeader} />
       <Container>
         {/* children 為 props 的一種，主要是將其他的東西包在本地標籤之中 */}
         { children }
