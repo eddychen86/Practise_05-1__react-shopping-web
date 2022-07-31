@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import styled, { css } from 'styled-components';
+
+import Container from '../common/Container';
 
 const PageHeader = styled.div`
   ${(props) => props.fixed && css`
@@ -23,9 +26,11 @@ const DefaultLayout = ({ fixedHeader, children }) => {
       <PageHeader fixed={fixedHeader}>
         <Header />
       </PageHeader>
-      {/* children 為 props 的一種，主要是將其他的東西包在本地標籤之中 */}
-      { children }
-      <footer>Footer</footer>
+      <Container>
+        {/* children 為 props 的一種，主要是將其他的東西包在本地標籤之中 */}
+        { children }
+      </Container>
+      <Footer />
     </div>
   )
 }
